@@ -264,7 +264,7 @@ img{ max-width:100%; display:block; }
 
 /* ----- Project detail page ----- */
 .project-detail{
-  padding: 18px;
+  padding: 45px;
   margin: 14px 0;
 }
 .detail-head{
@@ -282,7 +282,7 @@ img{ max-width:100%; display:block; }
   padding-top: 14px;
   display:grid;
   grid-template-columns: 1.1fr .9fr;
-  gap: 16px;
+  gap: 40px;
   align-items: start;
 }
 
@@ -340,4 +340,22 @@ video{
   .grid-2{ grid-template-columns: 1fr; }
   .project-grid{ grid-template-columns: 1fr; }
   .detail-grid{ grid-template-columns: 1fr; }
+}
+/* layout */
+.page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
+}
+
+/* footer sizing */
+.site-footer{
+  padding: 12px 0;      /* smaller than 22px */
+  border-top: 1px solid var(--border);
+  background: rgba(11,15,23,.55);
+  backdrop-filter: blur(10px);
 }
